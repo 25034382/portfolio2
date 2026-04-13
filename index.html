@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEISANI GUNDO JR | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">SEISANI GUNDO </div>
+            <ul class="nav-links">
+                <li><a href="#home">My Home</a></li>
+                <li><a href="#about">About Gundo</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home">
+            <div class="container home-container">
+                <div class="home-text">
+                    <h1>Hi, My name is  <span> Gundo Seisani</span></h1>
+                    <p class="tagline">Upcoming web developrt & Designer</p>
+                    <p class="short-bio">I'm a Univen Computer scinece student passionate about building user-friendly digital experiences. Welcome to my portfolio!</p>
+                    <a href="#contact" class="btn primary">Get in Touch</a>
+                </div>
+                <div class="home-photo">
+                    <img src=" c:\Users\SEISANI GUNDO JR\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\9D01AD00912EBE9F60ED38F8414D62849E3EE52B\transfers\2026-14\WhatsApp Image 2026-04-02 at 02.06.18.jpeg" alt="gundo">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Academic Background</h3>
+                        <p>I am currently pursuing Computer Science degree at Univen.I am dedicated and passionate Computer scince student , I am highly motivated to continuously learn and grow within the field of computer science.</p>
+                        <h3>Skills & Tools</h3>
+                        <ul class="skills-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (Basic)</li>
+                            <li>Git & GitHub</li>
+                            <li>Responsive Design</li>
+                            
+                            <li>VS Code / NetBeans</li>
+                        </ul>
+                        <h3>Goals</h3>
+                        <p>I aim to become a full-stack developer and contribute to open-source projects. I'm excited to learn new technologies and build meaningful applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="c:\Users\SEISANI GUNDO JR\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\9D01AD00912EBE9F60ED38F8414D62849E3EE52B\transfers\2026-14\WhatsApp Image 2026-04-02 at 01.58.14.jpeg" alt="Project 1 Screenshot">
+                        <h3>GUNDO Simple Maths Calculator </h3>
+                        <p>A simple calculator takes numbers as input, processes them using arithmetic operations, and displays the result on a screen. It usually has buttons for numbers (0–9), operators, and functions like clear (C) or equals (=)..</p>
+                        <p><strong>Tools used:</strong> HTML, CSS, JavaScript</p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="c:\Users\SEISANI GUNDO JR\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\9D01AD00912EBE9F60ED38F8414D62849E3EE52B\transfers\2026-14\WhatsApp Image 2026-04-02 at 02.01.42.jpeg">
+                        <h3>Gundo 2-Do-List 2</h3>
+                        <p>is a simple tool used to organize tasks that need to be completed. It helps you keep track of what you must do, when to do it, and in what order..</p>
+                        <p><strong>Tools used:</strong> Python, Flask, Bootstrap</p>
+                    </div>
+                    <!-- You can add more projects -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">seisanigundo@gmail.com</a>
+                       <br> 0793888043</br></p>
+                        <div class="social-links">
+                            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <!-- Add other profiles if desired -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Seisani Gundo . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
